@@ -273,7 +273,7 @@ document.addEventListener(
             )
         ) {
 
-            loadTab("painel");
+            loadTab("gestao");
 
         }
 
