@@ -67,8 +67,8 @@
                 <div class="side-link" data-tab="videoteca">Apresentação do Script</div>
             </div>
 
-        </aside>
-<!-- THUMBNAIL DO VÍDEO -->
+            
+            <!-- THUMBNAIL DO VÍDEO -->
 <div class="video-thumbnail" onclick="openVideoModal()">
 
     <img
@@ -86,3 +86,33 @@
 
     </div>
 </div>
+
+            
+        </aside>
+<script>
+
+function openVideoModal() {
+
+    document.getElementById("videoModal").style.display = "block";
+
+    document.getElementById("youtubePlayer").src =
+        "https://www.youtube.com/embed/fBj7-mOCtAA?autoplay=1";
+}
+
+function closeVideoModal() {
+
+    document.getElementById("videoModal").style.display = "none";
+
+    document.getElementById("youtubePlayer").src = "";
+}
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("videoModal");
+
+    if(event.target === modal){
+        closeVideoModal();
+    }
+};
+
+</script>
