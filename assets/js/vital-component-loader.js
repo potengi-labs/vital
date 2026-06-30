@@ -273,7 +273,7 @@ document.addEventListener(
             )
         ) {
 
-            loadTab("gestao");
+            loadTab("anotacoes");
 
         }
 
